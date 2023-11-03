@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>servizi che offriamo</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            background-color: #ffffff;
+        }
+
+        .modello {
+            max-width: 600px;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #3598db">
+            <div class="container">
+
+                <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" alt="logo" class="logo"> Tech
+                    Genius</a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tech Genius Service</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../index.html" id="Home">Home</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/servizi.html" id="servizi">Servizi</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/chisiamo.html" id="chiSiamo">Chi siamo</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/contatti.html" id="contatti">Contatti</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex justify-content-center align-items-center gp-3">
+                            <a href="./logIn.html"
+                                class="text-white text-decoration-none px-3 py-1 bg-success rounded-4">Log In</a>
+                        </div>
+                        <br>
+                        <div class="d-flex align-items-center justify-content-center" id="language-selector">
+                            <button data-lang="it" class="btn btn-success" id="ita">IT</button>
+                            <button data-lang="en" class="btn btn-success" id="eng">EN</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <div>
+        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:#204188; text-align: center; flex-direction: column;"
+            id="serviziche"> I servizi che offriamo </h1>
+        <ul style="font-family:'Courier New', Courier, monospace; font-size: 30px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 50px;">
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="1">Riparazione schede Smartphone</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="2">Sostituzione schermo</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="3">Recupero dati da smartphone
+                danneggiato</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="4">Sostituzione batteria</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="5">Configurazione smartphone</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="6">Protezione dei dati</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="7">Installazione app</li>
+            <li style="color: #204188;font-family:'Franklin Gothic Medium'" id="8">Hackeraggio Smartphone Fidanzata/o
+            </li>
+        </ul>
+    </div>
+    <div style="margin: 0; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+        <video width="90%" height="300" controls>
+            <source src="../img/riparazioni-smartphone.mp4" type="video/mp4">
+    </div>
+
+    </video>
+    <footer>
+        <div class="back-to-top">
+            <p>©2023 >Tech Genius Service by BitCamp team 3</p>
+            <button class="btn btn-success" id="backToTopBtn">Torna in cima</button>
+        </div>
+    </footer>
+    <script>
+        const backToTopButton = document.getElementById("backToTopBtn");
+
+        backToTopButton.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        const itaButton = document.getElementById("ita");
+        const engButton = document.getElementById("eng");
+        function ita() {
+
+            document.getElementById("servizi").innerHTML = "Servizi"
+            document.getElementById("chiSiamo").innerHTML = "Chi siamo"
+            document.getElementById("contatti").innerHTML = "Contatti"
+            document.getElementById("backToTopBtn").innerHTML = "Torna in cima"
+            document.getElementById("1").innerHTML = "Riparazione schede Smartphone"
+            document.getElementById("2").innerHTML = "Sostituzione schermo"
+            document.getElementById("3").innerHTML = "Recupero dati da smartphone danneggiato"
+            document.getElementById("4").innerHTML = "Sostituzione batteria"
+            document.getElementById("5").innerHTML = "Configurazione smartphone"
+            document.getElementById("6").innerHTML = "Protezione dei dati"
+            document.getElementById("7").innerHTML = "Installazione app"
+            document.getElementById("8").innerHTML = "Hackeraggio Smartphone Fidanzata/o"
+            document.getElementById("serviziche").innerHTML = "I servizi che offriamo "
+            localStorage.setItem("lingua", "italiano")
+
+        };
+
+        function eng() {
+            document.getElementById("servizi").innerHTML = "Services"
+            document.getElementById("chiSiamo").innerHTML = "About us"
+            document.getElementById("contatti").innerHTML = "Links"
+            document.getElementById("backToTopBtn").innerHTML = "Back to top"
+            document.getElementById("1").innerHTML = "Smartphone card repair"
+            document.getElementById("2").innerHTML = "Screen replacement"
+            document.getElementById("3").innerHTML = "Data recovery from damaged smartphone"
+            document.getElementById("4").innerHTML = "Battery replacement"
+            document.getElementById("5").innerHTML = "Smartphone configuration"
+            document.getElementById("6").innerHTML = "Data protection"
+            document.getElementById("7").innerHTML = "App installation"
+            document.getElementById("8").innerHTML = "Hacking Girlfriend's Smartphone"
+            document.getElementById("serviziche").innerHTML = "The services we offer"
+            localStorage.setItem("lingua", "inglese")
+
+        };
+
+        itaButton.addEventListener("click", ita);
+        engButton.addEventListener("click", eng);
+        var linguaSel = localStorage.getItem("lingua");
+        if (linguaSel === "italiano") {
+            ita();
+        } else if (linguaSel === "inglese") {
+            eng();
+        }
+
+    </script>
+</body>
+
+</html>

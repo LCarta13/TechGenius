@@ -1,0 +1,109 @@
+.evidenziato {
+
+  font-weight: bolder;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 89px;
+
+}
+
+main {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+hr {
+  color: white;
+}
+
+.datiUtente {
+  color: white;
+}
+
+h6 {
+  color: #ffffff;
+}
+
+h5 {
+  color: #ffffff;
+}
+
+.custom-container {
+
+  width: 80%;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+  padding: 2%;
+  background-color: #204188;
+}
+
+footer {
+  width: 100%;
+  background-color: #3598db;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  height: 89px;
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#backToTopBtn {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.logo {
+  width: 70px;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+@media(max-width: 991px) {
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+}
+
+::-webkit-scrollbar {
+
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3598db;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7ed957;
+}

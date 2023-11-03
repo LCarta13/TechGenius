@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/dati_utente.css">
+
+  <title>Tech Genius</title>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #3598db ;" >
+
+      <div class="container">
+
+        <!--LOGO-->
+        <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" alt="logo" class="logo"> Tech Genius</a>
+
+        <!--Toggle Btn-->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--SideBar-->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <!--Sidebar Header-->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tech Genius Service</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <!--sidebar Body-->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link " href="./anagrafica.html" id="modifica">Modifica Dati</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="./dati_utente.html" id="datiPers">I tuoi Dati</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" id="servizi">
+                  Richiedi un servizio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./riparazione.html" id="riparazione">Riparazione</a></li>
+                  <li><a class="dropdown-item" href="./assemblaggio.html" id="assemblaggio">Assemblaggio</a></li>
+                  <li><a class="dropdown-item" href="./prenotazione.html" id="serviziSpeciali">Servizi Speciali</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!--    FORM PER CASELLA SEARCH NEL CASO SERVISSE
+
+                      <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                  -->
+
+            <!--Login -->
+            <div class="d-flex justify-content-center align-items-center gp-3">
+              <a href="./pages/logIn.html" class="text-white text-decoration-none px-3 py-1 bg-danger rounded-4">Log Out</a>
+            </div>
+            <br>
+
+            <div id="language-selector" class="d-flex justify-content-center align-items-center">
+              <button id="ita" data-lang="it" class="btn btn-success d-flex align-items-center">IT</button>
+              <button id="eng" data-lang="en" class="btn btn-success d-flex align-items-center">EN</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="main">
+    <br>
+    <div class="container text-left custom-container">
+      <h5 id="titolo1">I tuoi dati personali</h5>
+      <hr>
+      <div class="row">
+        <div class="col-sm">
+          <span class="datiUtente" id="nomeTit"> Nome: </span><span class="evidenziato" id="nome"></span><br>
+          <span class="datiUtente" id="cognomeTit"> Cognome:</span> <span class="evidenziato" id="cognome"></span><br>
+          <span class="datiUtente" id="telefonoTit"> Telefono: </span></span><span class="evidenziato"
+            id="telefono"><br>
+
+
+        </div>
+
+        <div class="col-sm">
+          <span class="datiUtente" id="emailTit">Indirizzo Email: </span><span class="evidenziato"
+            id="email"></span><br>
+          <span class="datiUtente" id="indirizzoTit"> Indirizzo: </span><span class="evidenziato"
+            id="indirizzo"></span><br>
+
+
+        </div>
+        <hr>
+        <h5 id="titolo2">Riparazioni</h5>
+        <hr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th id="thRip">Numero di serie</th>
+              <th id="thRip2">Descrizione</th>
+            </tr>
+          </thead>
+          <tbody id="tabella1">
+
+          </tbody>
+        </table>
+        <h5 id="titolo3">Assemblaggio</h5>
+        <hr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th id="thAss">Budget</th>
+              <th id="thAss2">Descrizione</th>
+            </tr>
+          </thead>
+          <tbody id="tabella2">
+
+          </tbody>
+        </table>
+        <button type="button" onclick="cancellaDati()" class="btn btn-success" id="invia">Cancella Dati</button>
+      </div>
+
+  </main>
+  <footer>
+    <!--footer-->
+    <div class="back-to-top">
+      <p>Â©2023 >Tech Genius Service by BitCamp team 3</p>
+      <button class="btn btn-success" id="backToTopBtn">Torna in cima</button>
+    </div>
+  </footer>
+
+  <script src="../javascript/dati_utente.js"></script>
+</body>
+
+</html>

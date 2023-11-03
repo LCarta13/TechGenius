@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Tech Genius Service</title>
+  <link rel="stylesheet" href="../CSS/home.css">
+  <style>
+    .modello1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+    }
+
+    .modello {
+      max-width: 600px;
+      margin: 10px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+      padding: 50px;
+      color: #204188;
+    }
+
+    .image-container {
+      text-align: left;
+    }
+
+    .image-container img {
+      display: block;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: #ffffff">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #3598db">
+
+      <div class="container">
+
+
+        <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" alt="logo" class="logo"> Tech
+          Genius</a>
+
+
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tech Genius Service</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../index.html" id="Home">Home</a>
+              </li>
+
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/servizi.html" id="servizi">Servizi</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/chisiamo.html" id="chiSiamo">Chi siamo</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../pages/contatti.html" id="contatti">Contatti</a>
+              </li>
+            </ul>
+
+            <div class="d-flex justify-content-center align-items-center gp-3">
+              <a href="./logIn.html" class="text-white text-decoration-none px-3 py-1 bg-success rounded-4">Login</a>
+            </div>
+            <br>
+            <div class="d-flex align-items-center justify-content-center" id="language-selector">
+              <button data-lang="it" class="btn btn-success" id="ita">IT</button>
+              <button data-lang="en" class="btn btn-success" id="eng">EN</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+  <main style="height:85vh">
+    <div class="modello1">
+      <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:#204188" id="avoi">Ci
+        presentiamo a voi</h1>
+      <div class="modello" id="storia"> L’Assistenza Tech Genius ha sede a Catania(CT), è un azienda che opera da più di
+        10 anni nel settore della telefonia cellulare. Gli ambiti operativi della società Tech Genius sono quelli
+        dell’Assistenza Tecnica specializzata per i settori di Telefonia Cellulare (smartphone e tablet) in garanzia e
+        fuori garanzia, che si svolge secondo le modalità imposte dai costruttori e secondo le procedure stabilite dalla
+        società. Il personale è giovane, dinamico e altamente qualificato.
+      </div>
+
+      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="max-width: 500px; max-height: 500px"
+              src="https://happytec.it/wp-content/uploads/2019/10/riparazione-hardware-1024x469.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 500px; max-height: 500px"
+              src="https://www.mayersystem.com/wp-content/uploads/2020/02/sostituzione-batteria-smartphone.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 500px; max-height: 500px"
+              src="https://www.html.it/app/uploads/2022/07/Hacker-dentro-il-telefono.jpg" class="d-block w-100"
+              alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 500px; max-height: 500px"
+              src="https://www.dalchecco.it/wp-content/uploads/2016/04/recupero-dati-cellulare.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="max-width: 500px; max-height: 500px"
+              src="https://www.prince-lab.it/wp-content/uploads/2016/10/PrinceLAB_Smartphone-iPhone.jpg"
+              class="d-block w-100" alt="...">
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+    <div class="back-to-top">
+      <p>©2023 >Tech Genius Service by BitCamp team 3</p>
+      <button class="btn btn-success" id="backToTopBtn">Torna in cima</button>
+    </div>
+
+  </footer>
+  <script>
+    const backToTopButton = document.getElementById("backToTopBtn");
+
+    backToTopButton.addEventListener("click", function () {
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+    const itaButton = document.getElementById("ita");
+    const engButton = document.getElementById("eng");
+    function ita() {
+
+      document.getElementById("servizi").innerHTML = "Servizi"
+      document.getElementById("chiSiamo").innerHTML = "Chi siamo"
+      document.getElementById("contatti").innerHTML = "Contatti"
+      document.getElementById("avoi").innerHTML = "Ci presentiamo a voi"
+      document.getElementById("storia").innerHTML = "L’Assistenza Tech Genius ha sede a Catania(CT), è un azienda che opera da più di 10 anni nel settore della telefonia cellulare. Gli ambiti operativi della società Tech Genius sono quelli dell’Assistenza Tecnica specializzata per i settori di Telefonia Cellulare (smartphone e tablet) in garanzia e fuori garanzia, che si svolge secondo le modalità imposte dai costruttori e secondo le procedure stabilite dalla società. Il personale è giovane, dinamico e altamente qualificato."
+      document.getElementById("backToTopBtn").innerHTML = "Torna in cima"
+      localStorage.setItem("lingua", "italiano")
+
+    };
+
+    function eng() {
+      document.getElementById("servizi").innerHTML = "Services"
+      document.getElementById("chiSiamo").innerHTML = "About us"
+      document.getElementById("contatti").innerHTML = "Links"
+      document.getElementById("avoi").innerHTML = "We introduce ourselves to you"
+      document.getElementById("storia").innerHTML = "Tech Genius Assistance is based in Catania (CT), it is a company that has been operating in the mobile telephony sector for more than 10 years. The operational areas of the Tech Genius company are those of specialized Technical Assistance for the Cellular Telephony sectors (smartphones and tablets) under warranty and out of warranty, which is carried out according to the methods imposed by the manufacturers and according to the procedures established by the company. The staff is young, dynamic and highly qualified."
+      document.getElementById("backToTopBtn").innerHTML = "Back to top"
+      localStorage.setItem("lingua", "inglese")
+
+    };
+
+    itaButton.addEventListener("click", ita);
+    engButton.addEventListener("click", eng);
+    var linguaSel = localStorage.getItem("lingua");
+    if (linguaSel === "italiano") {
+      ita();
+    } else if (linguaSel === "inglese") {
+      eng();
+    }
+
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>

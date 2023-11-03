@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #3598db">
+
+            <div class="container">
+
+
+                <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" alt="logo" class="logo"> Tech
+                    Genius</a>
+
+
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tech Genius Service</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../index.html" id="Home">Home</a>
+                            </li>
+
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/servizi.html" id="servizi">Servizi</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/chisiamo.html" id="chiSiamo">Chi siamo</a>
+                            </li>
+
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../pages/contatti.html" id="contatti">Contatti</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex justify-content-center align-items-center gp-3">
+                            <a href="./logIn.html"
+                                class="text-white text-decoration-none px-3 py-1 bg-success rounded-4">Login</a>
+                        </div>
+                        <br>
+                        <div class="d-flex align-items-center justify-content-center" id="language-selector">
+                            <button data-lang="it" class="btn btn-success" id="ita">IT</button>
+                            <button data-lang="en" class="btn btn-success" id="eng">EN</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <main style="height: 90vh;">
+
+        <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:#204188; text-align: center; flex-direction: column;"
+            id="cont">Contatti</h1>
+        <div>
+            <img style="max-width: 28; max-height: 28;" src="../img/icons8-whatsapp-48.png" alt="">
+            <p style="color: #204188;">Tel: 344 238989890001111</p>
+        </div>
+        <div>
+            <img style="max-width: 28; max-height: 28;" src="../img/icons8-gmail-48.png" alt="">
+            <p style="color: #204188;">eMail: techservicegenius@giemail.com</p>
+        </div>
+        <div>
+            <img style="max-width: 100; max-height: 100;" src="../img/Senza titolo.png" alt="">
+            <p style="color: #204188;" id="trovi"> Ci trovi a Catania. Via Roma n. 58</p>
+
+        </div>
+    </main>
+    <div>
+
+        <footer>
+
+            <div class="back-to-top">
+                <p>©2023 >Tech Genius Service by BitCamp team 3</p>
+                <button class="btn btn-success" id="backToTopBtn">Torna in cima</button>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const backToTopButton = document.getElementById("backToTopBtn");
+
+        backToTopButton.addEventListener("click", function () {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+
+        const itaButton = document.getElementById("ita");
+        const engButton = document.getElementById("eng");
+        function ita() {
+
+            document.getElementById("servizi").innerHTML = "Servizi"
+            document.getElementById("chiSiamo").innerHTML = "Chi siamo"
+            document.getElementById("contatti").innerHTML = "Contatti"
+            document.getElementById("backToTopBtn").innerHTML = "Torna in cima"
+            document.getElementById("trovi").innerHTML = "Ci trovi a Catania.In via Roma n.58"
+            document.getElementById("cont").innerHTML = "Contatti"
+
+            localStorage.setItem("lingua", "italiano")
+        };
+
+        function eng() {
+            document.getElementById("servizi").innerHTML = "Services"
+            document.getElementById("chiSiamo").innerHTML = "About us"
+            document.getElementById("contatti").innerHTML = "Links"
+            document.getElementById("backToTopBtn").innerHTML = "Back to top"
+            document.getElementById("trovi").innerHTML = "You can find us in Catania. In via Roma n.58"
+            document.getElementById("cont").innerHTML = "Contacts"
+
+            localStorage.setItem("lingua", "inglese")
+        };
+
+        itaButton.addEventListener("click", ita);
+        engButton.addEventListener("click", eng);
+        var linguaSel = localStorage.getItem("lingua");
+        if (linguaSel === "italiano") {
+            ita();
+        } else if (linguaSel === "inglese") {
+            eng();
+        }
+
+    </script>
+
+
+</body>
+
+</html>

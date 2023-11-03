@@ -1,0 +1,50 @@
+.logo {
+    width: 70px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+footer {
+    background-color: #3598db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#backToTopBtn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3598db;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #7ed957;
+}

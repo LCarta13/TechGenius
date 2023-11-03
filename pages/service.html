@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Genius</title>
+    <link rel="icon" type="image/png" href="../img/MobileService.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/service.css">
+    <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+    <link href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+    <script
+        src="https://unpkg.com/bootstrap-table@1.22.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3598db">
+        <div class="container">
+            <!--LOGO-->
+            <a class="navbar-brand" href="../index.html"> <img src="../img/logo.png" alt="logo" class="logo"> Tech
+                Genius</a>
+            <!--Toggle Btn-->
+            <button class="navbar-toggler shadow-none border-0 bg-success" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--SideBar-->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!--Sidebar Header-->
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tech Genius Service</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!--sidebar Body-->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../index.html" id="Home">Home</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../pages/servizi.html" id="servizi">Servizi</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../pages/chisiamo.html" id="chiSiamo">Chi siamo</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../pages/contatti.html" id="contatti">Contatti</a>
+                        </li>
+                    </ul>
+
+                    <!--    FORM PER CASELLA SEARCH NEL CASO SERVISSE
+
+                        <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    -->
+
+                    <!--Login -->
+                    <div class="d-flex justify-content-center align-items-center gp-3">
+                        <a href="./logIn.html" class="text-white text-decoration-none px-3 py-1 bg-danger rounded-4">Log
+                            Out</a>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <button data-lang="it" class="btn btn-success" id="ita">IT</button>
+                        <button data-lang="en" class="btn btn-success" id="eng">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container text-center" style="height:80vh">
+        <br>
+        <div class="card m-auto" style="overflow-x: scroll;">
+            <h1> Zona Service</h1>
+            <div style="display:flex; gap:5px; width:100%;align-items:center;justify-content: center;" >
+                <h4 id="welcome"> Benvenuto </h4><h4><span id="user"></span></h4>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th id="name">Nome </th>
+                        <th>Email</th>
+                        <th id="role">Ruolo</th>
+                        <th id="ass">Data Assunzione</th>
+                    </tr>
+                </thead>
+                <tbody id="tab">
+                    <tr>
+                        <td id="user"> admin1</td>
+                        <td>admin1@123.it</td>
+                        <td>Tecnico specializzato</td>
+                        <td>2023-10-28</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <table id="table" data-url="" data-filter-control="true" data-show-search-clear-button="true">
+            <thead>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="description" data-filter-control="input">
+                        <p id="description">Descrizione</p>
+                    </th>
+                    <th data-field="model" data-filter-control="select">
+                        <p id="model">Modello</p>
+                    </th>
+                    <th data-field="estimate" data-filter-control="select">
+                        <p id="estimate">Preventivo</p>
+                    </th>
+                    <th data-field="ongoing" data-filter-control="select">
+                        <p id="ongoing">In Corso?</p>
+                    </th>
+                    <th data-field="finishdate" data-filter-control="datepicker">
+                        <p id="finishdate">Data</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 </td>
+                    <td>Cambio batteria, sostituzione schermo</td>
+                    <td>Huawei P30 Lite</td>
+                    <td>100 €</td>
+                    <td>Si</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2 </td>
+                    <td>Cambio batteria</td>
+                    <td>Huawei P40</td>
+                    <td>100 €</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <button type="button" class="btn btn-success"><a id="gestione"  href="./gestionePrenota.html">Gestione prenotazioni</a></button>
+        </div>
+        <br>
+    </main>
+    <br>
+    <footer>
+        <!--footer-->
+        <div class="back-to-top">
+            <div>
+                <p>©2023 >Tech Genius Service by BitCamp team 3</p>
+                <button class="btn btn-success" id="backToTopBtn">Torna in cima</button>
+            </div>
+    </footer>
+</body>
+<script src="../javascript/service.js"></script>
+
+</html>

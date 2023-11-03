@@ -1,0 +1,82 @@
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3598db;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7ed957;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#divContainer {
+background-image: url(../img/closeup-shot-person-repair-mobile-mobile-repair-smartphone-workshop_181624-60063.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat; 
+width: 100%;
+}
+
+.navbar-brand:hover{
+color: #3598db;
+}
+
+.logo {
+    width: 70px;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+#divDescrizione{
+padding: 15px;
+}
+
+#imgRepair {
+    width: 175px;
+    float: left;
+}
+
+#h1Orari{
+    text-align: center;
+    font-size: large;
+    background-color: #3598db;
+    color: white;
+}
+
+/* Stili per il footer */
+footer {
+    background-color: #3598db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#backToTopBtn {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

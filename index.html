@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Home Tech Genius</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="divContainer">
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+
+                <div class="container">
+
+                    <!--LOGO-->
+                    <a class="navbar-brand" href="index.html"> <img src="./img/logo.png" alt="logo" class="logo"> Tech
+                        Genius</a>
+
+                    <!--Toggle Btn-->
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--SideBar-->
+                    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <!--Sidebar Header-->
+                        <div class="offcanvas-header text-white border-bottom">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tech Genius Service</h5>
+                            <button type="button" class="btn-close btn-close-white shadow-none"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <!--sidebar Body-->
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./pages/servizi.html" id="servizi">Servizi</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./pages/chisiamo.html" id="chiSiamo">Chi siamo</a>
+                                </li>
+
+                                <li class="nav-item mx-2">
+                                    <a class="nav-link" href="./pages/contatti.html" id="contatti">Contatti</a>
+                                </li>
+                            </ul>
+
+                            <!--    FORM PER CASELLA SEARCH NEL CASO SERVISSE
+
+                            <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        -->
+
+                            <!--Login -->
+                            <div class="d-flex justify-content-center align-items-center gp-3">
+                                <a href="./pages/logIn.html"
+                                    class="text-white text-decoration-none px-3 py-1 bg-success rounded-4">Log In</a>
+                            </div>
+
+                            <br>
+
+
+                            <!--Bottoni lingua-->
+                            <div id="language-selector" class="d-flex justify-content-center align-items-center">
+                                <button data-lang="it" class="btn btn-success" id="ita">IT</button>
+                                <br>
+                                <button data-lang="en" class="btn btn-success" id="eng">EN</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--FINE NAVBAR-->
+
+            <section class="w-100 vh-100 d-flex flex-column text-white fs-1" style="text-align: center; padding: 55px;">
+                <h3 id="h3">Assistenza e riparazione cellulari e tablet <br>
+                    Riparazioni vetro, sostituzione batteria e altri interventi per iPhone, Samsung, Huawei e altri
+                    marchi!</h3>
+                <br>
+                <button onclick="scopriIservizi()" id="bottoneServizi" class="btn btn-success">Scopri i nostri
+                    servizi!</button>
+                <br>
+                <p class="fs-5" id="p8mesi">Più di 1'546 riparazioni in soli 8 mesi, affidati a veri professionisti</p>
+            </section>
+
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+
+        <div id="divDescrizione">
+            <img src="https://www.tech-assist.it/wp-content/uploads/2017/04/riparazione-cellulare-01.jpg" alt="img"
+                id="imgRepair">
+            <p id="pPrincipale"> Siamo la soluzione affidabile per riparare i vostri cellulari, tablet e altri gadget
+                elettronici. Con anni di esperienza nel settore, il nostro team esperto è pronto a restituire nuova vita
+                ai vostri dispositivi danneggiati. Offriamo servizi di riparazione rapida e di alta qualità, da schermi
+                rotti a problemi software, e garantiamo la massima attenzione ai dettagli. La vostra soddisfazione è la
+                nostra priorità, e ci impegniamo a restituirvi dispositivi come nuovi. Scoprite i nostri servizi oggi e
+                affidateci i vostri preziosi dispositivi.</p>
+        </div>
+
+        <!-- tabella orari-->
+        <h1 id="h1Orari">I nostri orari</h1>
+
+        <table class="table table-success table-striped">
+            <tr>
+                <th id="th1">Giorno</th>
+                <th id="th2">Orario di apertura</th>
+                <th id="th3">Orario di chiusura</th>
+            </tr>
+            <tr>
+                <td id="td1">Lunedì</td>
+                <td>09:00</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td id="td2">Martedì</td>
+                <td>09:00</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td id="td3">Mercoledì</td>
+                <td>09:00</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td id="td4">Giovedì</td>
+                <td>09:00</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td id="td5">Venerdì</td>
+                <td>09:00</td>
+                <td>18:00</td>
+            </tr>
+            <tr>
+                <td id="td6">Sabato</td>
+                <td>10:00</td>
+                <td>15:00</td>
+            </tr>
+            <tr>
+                <td id="td7">Domenica</td>
+                <td>Chiuso</td>
+                <td>Chiuso</td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer>
+        <!--footer-->
+        <div class="back-to-top">
+            <p>©2023 >Tech Genius Service by BitCamp team 3</p>
+            <button class="btn btn-success" id="backToTopBtn">Torna in cima</button>
+        </div>
+    </footer>
+
+    <script>
+        // script tasti lingua 
+
+        const itaButton = document.getElementById("ita");
+        const engButton = document.getElementById("eng");
+
+        // Ita button
+        function ita() {
+            document.getElementById("servizi").innerHTML = "Servizi"
+            document.getElementById("chiSiamo").innerHTML = "Chi siamo"
+            document.getElementById("contatti").innerHTML = "Contatti"
+            document.getElementById("h3").innerHTML = "Assistenza e riparazione cellulari e tablet Riparazioni vetro, sostituzione batteria e altri interventi per iPhone, Samsung, Huawei e altri marchi!"
+            document.getElementById("bottoneServizi").innerHTML = "Scopri i nostri servizi!"
+            document.getElementById("p8mesi").innerHTML = "Più di 1'546 riparazioni in soli 8 mesi, affidati a veri professionisti"
+            document.getElementById("pPrincipale").innerHTML = "Siamo la soluzione affidabile per riparare i vostri cellulari, tablet e altri gadget elettronici. Con anni di esperienza nel settore, il nostro team esperto è pronto a restituire nuova vita ai vostri dispositivi danneggiati. Offriamo servizi di riparazione rapida e di alta qualità, da schermi rotti a problemi software, e garantiamo la massima attenzione ai dettagli. La vostra soddisfazione è la nostra priorità, e ci impegniamo a restituirvi dispositivi come nuovi. Scoprite i nostri servizi oggi e affidateci i vostri preziosi dispositivi."
+            document.getElementById("h1Orari").innerHTML = "I nostri orari"
+
+            document.getElementById("th1").innerHTML = "Giorno"
+            document.getElementById("th2").innerHTML = "Orario di apertura"
+            document.getElementById("th3").innerHTML = "Orario di chiusura"
+
+            document.getElementById("td1").innerHTML = "Lunedì"
+            document.getElementById("td2").innerHTML = "Martedì"
+            document.getElementById("td3").innerHTML = "Mercoledì"
+            document.getElementById("td4").innerHTML = "Giovedì"
+            document.getElementById("td5").innerHTML = "Venerdì"
+            document.getElementById("td6").innerHTML = "Sabato"
+            document.getElementById("td7").innerHTML = "Domenica"
+
+            document.getElementById("backToTopBtn").innerHTML = "Torna in cima"
+            localStorage.setItem("lingua", "italiano")
+
+        };
+
+        //eng button
+        function eng () {
+            document.getElementById("servizi").innerHTML = "Services"
+            document.getElementById("chiSiamo").innerHTML = "About us"
+            document.getElementById("contatti").innerHTML = "Contact us"
+            document.getElementById("h3").innerHTML = "Mobile phone and tablet assistance and repairs Glass repairs, battery replacement and other service for iPhone, Samsung, Huawei and other brands!";
+            document.getElementById("bottoneServizi").innerHTML = "Discover our services"
+            document.getElementById("p8mesi").innerHTML = "More than 1,546 repairs in just 8 months, entrusted to true professionals"
+            document.getElementById("pPrincipale").innerHTML = "We are the reliable solution to repair your cell phones, tablets and other electronic gadgets. With years of industry experience, our expert team is ready to bring new life back to your damaged devices. We offer fast, high-quality repair services, from broken screens to software issues, and we guarantee the utmost attention to detail. Your satisfaction is our priority, and we are committed to returning your devices like new. Discover our services today and entrust us with your precious devices."
+            document.getElementById("h1Orari").innerHTML = "Opening hours"
+
+            document.getElementById("th1").innerHTML = "Day"
+            document.getElementById("th2").innerHTML = "Opening time"
+            document.getElementById("th3").innerHTML = "Closing time"
+
+            document.getElementById("td1").innerHTML = "Monday"
+            document.getElementById("td2").innerHTML = "Tuesday"
+            document.getElementById("td3").innerHTML = "Wednesday"
+            document.getElementById("td4").innerHTML = "Thursday"
+            document.getElementById("td5").innerHTML = "Friday"
+            document.getElementById("td6").innerHTML = "Saturday"
+            document.getElementById("td7").innerHTML = "Sunday"
+
+            document.getElementById("backToTopBtn").innerHTML = "Back to top"
+            localStorage.setItem("lingua", "inglese")
+
+        };
+
+        itaButton.addEventListener("click", ita);
+        engButton.addEventListener("click", eng);
+        var linguaSel = localStorage.getItem("lingua");
+        if (linguaSel === "italiano") {
+            ita();
+        } else if (linguaSel === "inglese") {
+            eng();
+        }
+
+
+        //bottone scopri i servizi
+        function scopriIservizi() {
+            window.location.href = "servizi.html";
+        }
+
+        //bottone backToTop
+        const backToTopButton = document.getElementById("backToTopBtn");
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
