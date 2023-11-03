@@ -26,6 +26,13 @@ function aggiungiOrdine() {
 function eliminaOrdine(bottone) {
     const riga = bottone.parentElement.parentElement;
     riga.parentNode.removeChild(riga);
+    const tabellaOrdini = document.querySelector("#tabellaOrdini tbody");
+    const inviaOrdini = document.getElementById("inviaOrdini");
+
+    if (tabellaOrdini.rows.length === 1) {
+        document.getElementById("tabellaOrdini").style.display = "none";
+        inviaOrdini.style.display = "none";
+    }
 }
 
 function inviaOrdini() {
