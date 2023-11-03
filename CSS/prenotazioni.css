@@ -74,7 +74,7 @@ h1 {
 .bottone-modulo {
     margin: 10px 0;
     width: 120px;
-    background-color: #7ed957;
+    background-color: #157347;
     color: #204188;
     padding: 10px 20px;
     border: none;
@@ -83,7 +83,7 @@ h1 {
 }
 .bottone-modulo:hover {
     background-color: #3598db;
-    color: #7ed957;
+    color: #157347;
 }
 .contenitore-tabella {
     width: 100%;
@@ -112,7 +112,7 @@ h1 {
 }
 .bottone-elimina {
     height: 30px;
-    background-color: #7ed957;
+    background-color: #157347;
     color: #204188;
     border: none;
     cursor: pointer;
@@ -121,7 +121,7 @@ h1 {
 }
 .bottone-elimina:hover{
     background-color: #204188;
-    color: #7ed957;
+    color: #157347;
 }
 td {
     text-align: center;
@@ -129,7 +129,7 @@ td {
 }
 .bottone-invio-ordini {
     display: none;
-    background-color: #7ed957;
+    background-color: #157347;
     color: #204188;
     padding: 10px 20px;
     border: none;
@@ -140,7 +140,7 @@ td {
 }
 .bottone-invio-ordini:hover{
     background-color: #204188;
-    color: #7ed957;
+    color: #157347;
 }
 footer {
     background-color: #3598db;
